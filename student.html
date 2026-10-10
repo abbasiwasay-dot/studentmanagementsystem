@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Management System</h1>
+
+    <div class="top">
+        <h3>Total Students: <span id="total">0</span></h3>
+
+        <div class="filters">
+
+            <input type="text" id="search" placeholder="Search student...">
+
+            <select id="courseFilter">
+                <option value="All">All Courses</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="React">React</option>
+            </select>
+
+            <button id="sortName">Sort Name</button>
+            <button id="sortAge">Sort Age</button>
+
+        </div>
+    </div>
+
+
+    <div class="form">
+
+        <input type="text" id="name" class="input" placeholder="Student name">
+
+        <input type="number" id="age" class="input" placeholder="Age" min="1">
+
+        <input type="text" id="course" class="input" placeholder="Course">
+
+        <button id="addBtn">Add Student</button>
+
+    </div>
+
+
+    <div id="studentList">
+        <!-- Cards JS se create honge -->
+    </div>
+
+</div>
+
+<script src="student.js"></script>
+
+</body>
+</html>
